@@ -30,7 +30,10 @@ jobs:
         name: hello-artifact
         path: ./artifacts/hello.txt
       
-    - name: display content of the file
-      run: ls
+    - name: list the file
+      run: ls -ltRa
+
+    - name: display the content of the file
+      run: cat artifacts/hello.txt
 
 
