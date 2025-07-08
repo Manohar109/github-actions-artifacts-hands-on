@@ -28,9 +28,9 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact
-        path: hello.txt
+        path: ./artifacts/hello.txt
       
     - name: display content of the file
-      run: cat hello.txt
+      run: cat ./artifacts/hello.txt
 
 
